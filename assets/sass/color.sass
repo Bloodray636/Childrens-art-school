@@ -1,0 +1,174 @@
+@import "config.sass"
+
+h1
+    color: $blue!important
+
+h4
+    color: $black!important
+
+.btn
+    background-color: $orange!important
+    color: $white!important
+
+.top-contact
+    background: $light-blue
+    .icon
+        &:hover
+            transition: .5s ease
+            p
+                color: $orange
+            svg
+                fill: $orange
+    svg
+        fill: $black
+    a
+        color: $black
+        transition: .3s ease
+        &:hover
+            color: $orange
+    .social-icon
+        .ok
+            transition: .3s ease
+            &:hover
+                fill: $ok
+        .vk
+            transition: .3s ease
+            &:hover
+                fill: $vk
+        .viber
+            transition: .3s ease
+            &:hover
+                fill: $viber
+        .whatsapp
+            transition: .3s ease
+            &:hover
+                fill: $whatsapp
+
+.logo-block
+    .logo
+        .eye
+            .icon
+                &:hover 
+                    svg
+                        fill: $orange
+                    p
+                        color: $orange!important
+                        
+                p
+                    color: $black
+                    transition: .3s ease
+
+.navbar
+    background-color: $light-blue
+    .navbar-nav
+        .dropdown
+            .dropdown-menu
+                background: $light-blue!important
+                @media screen and (min-width: 991px)
+                    &
+                        background: transparent
+                .dropdown-item
+                    background: transparent!important
+                    color: $black!important
+                    transition: .3s ease
+                    &:hover
+                        color: $orange!important
+    .navbar-toggler
+        background-color: $blue
+        transition: .5s ease
+        svg
+            fill: $white
+    .nav-link
+        color: $black!important
+        &:hover
+            color: $orange!important
+    .offcanvas
+        background-color: $light-blue!important
+
+.slogan
+    background-color: $light-blue
+
+.left-menu-mb
+    .navbar-toggler
+        background-color: $blue
+        transition: .5s ease
+        svg
+            fill: $white
+    
+
+.left-menu, .left-menu-mb
+    .accordion-header
+        &.title
+            background-color: $light-blue
+        &:first-of-type
+        .accordion-button
+            border-bottom: $dashed!important
+            &:focus 
+                border-bottom: $dashed!important
+            &:not(.collapsed)
+                color: $black
+                background-color: $white
+            &::after
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 490 490'%3E%3Cpath d='M197.972 375.69c10.408-4.046 22.136-10.36 35.238-19.224-4.207-14.417-11.977-28.004-23.325-39.352-14.761-14.762-33.638-23.892-54.038-26.378-8.73 16.371-13.989 30.43-16.265 42.314 24.895 5.421 45.954 21.227 58.39 42.64zM121 489.988c38.163-.258 69.022-31.264 69.022-69.488 0-38.384-31.116-69.5-69.5-69.5-38.213 0-69.238 31.009-69.514 69.157v-.037.047C51.008 436 30.1 490 0 490h121v-.012zM487.834 1.77l-.001.002-.195-.178.002-.002c-15.428-14.08-146.838 66.886-246.759 175.847-33.467 36.843-57.74 68.303-74.26 94.747 21.609 4.291 41.476 14.855 57.406 30.786 12.025 12.025 20.746 26.121 26.178 41.147 24.256-18.757 52.518-45.183 84.994-80.596C434.604 154.091 503.262 15.851 487.834 1.77z' fill='#{$svg}'/%3E%3C/svg%3E")
+    .accordion-body
+        a
+            color: $black!important
+        .accordion-item
+            p
+                color: $black!important
+                border-bottom: $dashed!important
+
+.main
+    .img
+        background-color: $light-blue
+
+.owl-next, .owl-prev
+    background-color: $grey
+    transition: .5s ease
+    &:hover
+        background-color: $light-blue
+    span
+        color: $blue
+    
+.owl-carousel 
+    .thumbnail 
+        .title 
+            h2
+                color: $blue
+            p
+                color: $black
+        .date
+            p
+                color: $black
+
+footer
+    .section-footer
+        background-color: rgba(184, 215, 220, 0.90)
+    p, a
+        color: $black
+    a
+        transition: .3s ease
+        &:hover
+            color: $orange
+    .contact
+        svg
+            fill: $black
+    .social-icon
+        svg
+            fill: $black
+        .ok
+            transition: .3s ease
+            &:hover
+                fill: $ok
+        .vk
+            transition: .3s ease
+            &:hover
+                fill: $vk
+        .viber
+            transition: .3s ease
+            &:hover
+                fill: $viber
+        .whatsapp
+            transition: .3s ease
+            &:hover
+                fill: $whatsapp

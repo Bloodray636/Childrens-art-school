@@ -1,0 +1,80 @@
+@import config.sass
+    
+@font-face
+    font-family: "Lato-Regular", sans-serif
+    src: url(../fonts/Lato-Regular.ttf)
+
+@font-face
+    font-family: "Lato-Bold"
+    src: url(../fonts/Lato-Bold.ttf)
+
+body
+    font-family: $regular!important
+
+h2, h3, h4, h5, h6, a, p, span, label, input, textarea, li, ul, ol, button
+    line-height: normal
+    font-style: normal
+
+h1
+    font-size: clamp(1.25rem, 0.9998rem + 1.4298vw, 2.25rem)!important
+
+h2
+    font-size: clamp(1.25rem, 1.1874rem + 0.3575vw, 1.5rem)!important
+
+h3
+    font-size: clamp(1.125rem, 0.9733rem + 0.3165vw, 1.25rem)!important
+
+h4
+    font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem)!important
+    font-weight: 600!important
+
+h6
+    font-size: clamp(1rem, 1rem + 0vw, 1rem)!important
+
+p
+    font-size: clamp(1rem, 0.9687rem + 0.1787vw, 1.125rem)!important
+
+button, a
+    font-size: clamp(0.875rem, 0.8369rem + 0.2176vw, 1rem)!important
+    line-height: 24px
+
+.logo-block
+    .logo
+        .eye
+            .icon
+                p
+                    font-size: clamp(0.625rem, 0.5937rem + 0.1787vw, 0.75rem)!important
+                    font-weight: 900
+
+.navbar
+    .nav-link, .dropdown-item
+        font-size: clamp(1rem, 0.9687rem + 0.1787vw, 1.125rem)!important
+        font-weight: 900
+    
+.slogan
+    padding: 34px 0
+
+.accordion
+    .accordion-button
+        font-size: clamp(1rem, 0.9687rem + 0.1787vw, 1.125rem)!important
+        font-weight: 400!important
+        .accordion-body
+            .accordion-header
+                font-size: clamp(1rem, 0.9687rem + 0.1787vw, 1.125rem)!important
+                font-weight: 400!important
+
+.owl-next, .owl-prev
+    span
+        font-size: clamp(2.25rem, 2.0936rem + 0.8937vw, 2.875rem)!important
+
+.date
+    p
+        font-size: clamp(0.875rem, 0.7233rem + 0.3165vw, 1rem)!important
+
+footer
+    p, a
+        font-size: clamp(1rem, 0.8483rem + 0.3165vw, 1.125rem)!important
+    .control-contact, .copyright
+        p, a
+            line-height: normal
+            font-size: clamp(0.75rem, 0.5983rem + 0.3165vw, 0.875rem)!important

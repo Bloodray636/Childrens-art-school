@@ -1,0 +1,267 @@
+@import "config.sass"
+
+%title-h1
+    .title
+        h1
+            margin-bottom: 40px!important
+
+%title-h2
+    .title
+        h2
+            margin-bottom: 52px!important
+            @media screen and (max-width: 991px)
+                &
+                    margin-top: 52px!important
+
+%footer-title-h2
+    .title
+        h2
+            margin-bottom: 40px!important
+
+%title-h3
+    .title
+        h3
+            margin-top: 18px
+            margin-bottom: 34px
+            min-height: 50px
+
+%title-h4
+    .title
+        h4
+            margin-top: 41px
+
+%btn
+    .btn-block
+        .btn
+            padding: 10px 43px!important
+            border-radius: $radius!important
+
+%slider-1
+    .owl-carousel
+        -ms-touch-action: auto
+        touch-action: auto
+        position: relative
+        z-index: 1
+        .thumbnail
+            width: 100% !important
+            max-width: 100% !important
+            height: 100%
+            padding: 0 20px
+            display: flex
+            align-items: start
+            justify-content: center
+            margin: 0 auto
+            .img-link 
+                overflow: hidden
+                border-radius: $radius
+                img
+                    max-width: 232px
+                    width: 100%
+                    margin: 0 auto!important
+                    max-height: 225px
+                    height: 100%!important
+                    border-radius: $radius
+                    transition: .5s ease
+                &:hover img
+                    transform: scale(1.1) rotate(5deg)
+        .owl-stage
+            display: -webkit-box
+            display: -moz-box
+            display: -ms-box
+            display: box
+        .owl-stage-outer
+            padding: 0
+            overflow: hidden
+        .owl-item
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-flex: 0
+            -ms-flex: 0 auto
+            flex: 0 auto
+            width: 100%
+        .owl-dots
+            display: none
+            button
+                max-width: 36px !important
+                height: 5px
+                border-radius: 4px
+                -webkit-transition: 0.2s ease
+                transition: 0.2s ease
+        .owl-prev
+            right: 68px
+            position: absolute
+            border-radius: $radius
+            display: flex
+            align-items: center
+            justify-content: center
+            top: 50%
+            -webkit-transform: translateY(-50%)
+            transform: translateY(-50%)
+            border: none
+            padding: 15px 20px
+            outline: none
+            cursor: pointer
+            width: 56px
+            height: 56px
+            overflow-x: visible
+            @media screen and (max-width: 991px)
+                &
+                    width: 36px
+                    height: 36px
+                    right: 42px
+                    padding: 10px 15px
+        .owl-next
+            right: 0
+            position: absolute
+            border-radius: $radius
+            display: flex
+            align-items: center
+            justify-content: center
+            top: 50%
+            -webkit-transform: translateY(-50%)
+            transform: translateY(-50%)
+            border: none
+            padding: 15px 20px
+            outline: none
+            cursor: pointer
+            width: 56px
+            height: 56px
+            overflow-x: visible
+            @media screen and (max-width: 991px)
+                &
+                    width: 36px
+                    height: 36px
+                    padding: 10px 15px
+        .owl-nav
+            position: absolute
+            display: block
+            right: -110px
+            width: 100%
+            margin-left: auto
+            top: -120px
+            @media screen and (max-width: 991px)
+                &
+                    top: -110px
+            span
+                margin-top: -4px
+            [class*=owl-]:hover
+                color: #000!important
+                text-decoration: none
+
+%slider-2
+    .owl-carousel
+        -ms-touch-action: auto
+        touch-action: auto
+        position: relative
+        z-index: 1
+        .thumbnail
+            width: 100% !important
+            max-width: 100% !important
+            height: 100%
+            padding: 0 20px
+            margin: 0 auto
+            a:last-of-type
+                margin-top: 53px
+            .img-link
+                border-radius: $radius
+                img
+                    min-width: 613px
+                    width: 100%
+                    margin: 0 auto!important
+                    max-height: 281px
+                    height: 100%!important
+                    border-radius: $radius
+                    @media screen and (max-width: 1199px)
+                        &
+                            min-width: 300px
+                    @media screen and (max-width: 991px)
+                        &
+                            min-width: 300px
+            .date
+                margin-top: 30px
+            @extend %title-h2
+        .owl-stage
+            display: -webkit-box
+            display: -moz-box
+            display: -ms-box
+            display: box
+        .owl-stage-outer
+            padding: 0
+            overflow: hidden
+        .owl-item
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-flex: 0
+            -ms-flex: 0 auto
+            flex: 0 auto
+            width: 100%
+        .owl-dots
+            display: none
+            button
+                max-width: 36px !important
+                height: 5px
+                border-radius: 4px
+                -webkit-transition: 0.2s ease
+                transition: 0.2s ease
+        .owl-prev
+            right: 68px
+            position: absolute
+            border-radius: $radius
+            display: flex
+            align-items: center
+            justify-content: center
+            top: 50%
+            -webkit-transform: translateY(-50%)
+            transform: translateY(-50%)
+            border: none
+            padding: 15px 20px
+            outline: none
+            cursor: pointer
+            width: 56px
+            height: 56px
+            overflow-x: visible
+            @media screen and (max-width: 991px)
+                &
+                    width: 36px
+                    height: 36px
+                    right: 42px
+                    padding: 10px 15px
+        .owl-next
+            right: 0
+            position: absolute
+            border-radius: $radius
+            display: flex
+            align-items: center
+            justify-content: center
+            top: 50%
+            -webkit-transform: translateY(-50%)
+            transform: translateY(-50%)
+            border: none
+            padding: 15px 20px
+            outline: none
+            cursor: pointer
+            width: 56px
+            height: 56px
+            overflow-x: visible
+            @media screen and (max-width: 991px)
+                &
+                    width: 36px
+                    height: 36px
+                    padding: 10px 15px
+        .owl-nav
+            position: absolute
+            display: block
+            right: -20px
+            width: 100%
+            margin-left: auto
+            top: -120px
+            @media screen and (max-width: 991px)
+                &
+                    top: -110px
+            span
+                margin-top: -4px
+            [class*=owl-]:hover
+                color: #000!important
+                text-decoration: none

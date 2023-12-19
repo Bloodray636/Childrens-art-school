@@ -1,0 +1,255 @@
+@import "fs.sass"
+@import "color.sass"
+@import "config.sass"
+@import "mixin.sass"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none!important
+
+body
+    overflow-x: hidden
+
+.content, .program, .news, .service, footer
+    margin-top: 170px
+
+.top-contact
+    padding: 25px 0
+    svg
+        transition: .3s ease
+        width: 15px
+        height: 15px
+        margin-right: 7px
+        margin-top: -2px
+    p
+        transition: .3s ease
+    .eye
+        width: 18px!important
+        height: 18px!important
+    .social-icon
+        svg
+            width: 18px
+            height: 18px
+            margin-left: 15px
+.logo-block
+    padding: 4px 0
+    .logo
+        img
+            width: 150px
+            height: auto
+        .name
+            h2, h6
+                font-weight: 600
+            h2
+                margin: 7px 0
+        .eye
+            .icon
+                svg
+                    width: 23px
+                    height: 23px
+                    margin-right: 3px
+                    transition: .3s ease
+                p
+                    white-space: nowrap
+.dropdown
+    &:hover > .dropdown-menu
+        display: block
+        margin-top:0px
+        margin-left: 0px!important
+        opacity: 1!important
+        border-radius: $radius
+        padding: 12px!important
+    .dropdown-menu
+        display: none
+        transition: .0s ease
+        opacity: 0 !important
+        z-index: 999999
+        transition-delay: 1s
+        .nav-item 
+            .dropdown-toggle
+                &::after
+                    margin-bottom: 2px!important
+                    margin-left: 5px!important
+        .dropdown-item
+            margin: 10px 0!important
+    .dropend
+        &:hover > .dropdown-menu
+            display: block
+            margin-top:0px
+            margin-left: 0px!important
+            opacity: 1!important
+            @media screen and (min-width: 919px)
+                &
+                    position: absolute
+                    top: 0
+                    left: 110%
+
+
+.navbar
+    padding: 21px 0!important
+    .navbar-toggler
+        padding: 17px
+        border-radius: $radius
+        box-shadow: none!important
+    .navbar-nav
+        @media screen and (max-width: 991px)
+            &
+                margin: 14px 0px
+        .nav-link
+            margin: 0px 27px
+            @media screen and (max-width: 1199px)
+                &
+                    margin: 0px 14px
+            @media screen and (max-width: 991px)
+                &
+                    margin: 14px 0px
+
+.carousel
+    .carousel-item    
+        &.active
+        img
+            max-height: 698px
+            min-height: 300px
+            object-fit: cover
+            height: 100%
+    .carousel-indicators 
+        margin-bottom: 7px
+        & [data-bs-target]
+            width: 12px
+            height: 12px
+            border-radius: $dot-radius
+            transition: .3s ease
+            &.active
+                width: 16px
+                height: 16px
+
+.content
+    @extend %title-h1
+    .left-menu-mb
+        border: $border
+        padding: 17px
+        border-radius: $radius
+        .navbar-toggler
+            padding: 17px
+            border-radius: $radius
+    .left-menu, .left-menu-mb
+        .accordion-item
+            &:first-of-type
+                border-top-left-radius: 15px!important
+                border-top-right-radius: 15px!important
+            .accordion-header
+                padding: 26px 12px
+                font-weight: 700
+                &:first-of-type
+                    padding: 26px 14px
+                    border-top-left-radius: 15px!important
+                    border-top-right-radius: 15px!important
+                .accordion-button
+                    padding: 20px 0!important
+                    padding-left: 30px!important
+                    position: relative
+                    &:focus
+                        box-shadow: none!important                       
+                    &:not(.collapsed)
+                        box-shadow: none!important
+                    &::after
+                        position: absolute
+                        left: 0
+                        background-size: 100%
+                        background-repeat: no-repeat
+                        background-position: center      
+                        transform: scale(-1,1)  
+                        width: 18px
+                        height: 18px
+            .accordion-body
+                .accordion-item
+                    p
+                        padding: 20px 0!important
+                        border-bottom: $dashed!important
+    .main
+        .img
+            border-radius: $radius
+            padding: 46px 86px
+            margin-bottom: 40px
+        .text
+            margin-bottom: 40px
+            float: left
+            p
+                line-height: 27px
+                float: left
+
+.program
+    @extend %title-h1
+    .slider
+        border: $border
+        border-radius: $radius
+        padding: 56px 118px
+        @extend %slider-1
+        @extend %title-h4
+
+.news
+    @extend %title-h1
+    .slider
+        border: $border
+        border-radius: $radius
+        padding: 56px 30px
+        @extend %slider-2
+        @extend %title-h4
+        @extend %btn
+
+.service
+    @extend %title-h1
+    .service-item
+        border: $border
+        border-radius: $radius
+        padding: 56px 30px
+        @extend %btn
+        .card
+            @media screen and (max-width: 991px)
+                &
+                    margin-bottom: 80px
+            img
+                margin: 0 auto
+                border-radius: $radius
+                max-width: 372px
+                width: 100%
+                height: 505px
+                object-fit: cover
+            @extend %title-h3
+            hr
+                margin-bottom: 20px!important
+                max-width: 372px
+                width: 100%
+                margin: 0 auto
+
+footer
+    background-image: url(../img/bg-footer.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    .section-footer
+        padding-top: 138px
+    @extend %footer-title-h2
+    .logo
+        img
+            max-width: 156px
+            max-height: 156px
+            width: 100%
+            height: 100%
+    .contact
+        margin-bottom: 20px
+        svg
+            width: 14px
+            height: 14px
+            margin-right: 8px
+    .social-icon
+        svg
+            width: 27px
+            height: 27px
+            margin-right: 15px
+    .copyright
+        padding-bottom: 20px
+        margin-top: 100px
